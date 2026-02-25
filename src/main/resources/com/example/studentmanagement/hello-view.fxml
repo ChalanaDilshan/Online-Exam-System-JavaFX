@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="960.0" style="-fx-background-color: linear-gradient(to bottom right, #EAF0FF, #F5F7FF, #EDF2FF);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.HelloController">
+
+    <children>
+
+        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="52.0" prefWidth="960.0" style="-fx-background-color: rgba(255,255,255,0.70);                            -fx-border-color: rgba(180,195,240,0.50) transparent transparent transparent;                            -fx-border-width: 0 0 1 0;">
+            <children>
+                <Label layoutX="886.0" layoutY="16.0" style="-fx-text-fill: rgba(100,116,160,0.60); -fx-font-size: 11px;" text="v1.1  " />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="152.0" layoutY="80.0" prefHeight="460.0" prefWidth="660.0" style="-fx-background-color: #FFFFFF;                            -fx-background-radius: 20;                            -fx-border-color: rgba(180,195,240,0.45);                            -fx-border-width: 1;                            -fx-border-radius: 20;                            -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.13), 48, 0.0, 0, 16);">
+            <children>
+
+                <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="460.0" prefWidth="262.0" style="-fx-background-radius: 20 0 0 20;">
+                    <children>
+
+                        <AnchorPane layoutX="56.0" layoutY="128.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255,0.08);                                            -fx-background-radius: 50;">
+                            <children>
+                                <ImageView fitHeight="120.0" fitWidth="110.0" layoutX="27.0" layoutY="15.0" opacity="0.95" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Img/SystemLogo_.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+
+                        <Label alignment="CENTER" layoutY="292.0" prefWidth="262.0" style="-fx-text-fill: rgba(255,255,255,0.45);                                       -fx-font-size: 11px;                                       -fx-font-style: italic;" text="Secure · Simple · Smart" />
+
+                        <AnchorPane layoutX="80.0" layoutY="320.0" prefHeight="1.0" prefWidth="100.0" style="-fx-background-color: rgba(255,255,255,0.20);" />
+
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane layoutX="262.0" layoutY="0.0" prefHeight="460.0" prefWidth="398.0" style="-fx-background-color: transparent;">
+                    <children>
+
+                        <AnchorPane layoutX="162.0" layoutY="42.0" prefHeight="64.0" prefWidth="64.0" style="-fx-background-color: linear-gradient(to right, #16a34a, #22c55e);                                            -fx-background-radius: 50;                                            -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.35), 18, 0, 0, 6);">
+                            <children>
+                                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Img/Profile%20icon.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+
+                        <Label alignment="CENTER" layoutX="30.0" layoutY="126.0" prefWidth="330.0" style="-fx-text-fill: #1A2340;                                       -fx-font-size: 24px;                                       -fx-font-weight: bold;" text="Welcome " />
+
+                        <Label alignment="CENTER" layoutX="30.0" layoutY="158.0" prefWidth="330.0" style="-fx-text-fill: rgba(80,95,145,0.70);                                       -fx-font-size: 12px;" text="Log in to your account" />
+
+                        <Label layoutX="38.0" layoutY="208.0" style="-fx-text-fill: rgba(30,50,110,0.55);                                       -fx-font-size: 10px;                                       -fx-font-weight: bold;" text="Username" />
+
+                        <AnchorPane layoutX="32.0" layoutY="224.0" prefHeight="46.0" prefWidth="330.0" style="-fx-background-color: #F4F7FF;                                            -fx-background-radius: 10;                                            -fx-border-color: #D1DCFF;                                            -fx-border-width: 1.5;                                            -fx-border-radius: 10;">
+                            <children>
+                                <Label layoutX="12.0" layoutY="13.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 12px;" text="✦" />
+                                <TextField fx:id="username_tf" layoutX="36.0" layoutY="5.0" prefHeight="36.0" prefWidth="282.0" promptText="Enter your username" style="-fx-background-color: transparent;                                                   -fx-text-fill: #1A2340;                                                   -fx-prompt-text-fill: rgba(100,116,180,0.55);                                                   -fx-font-size: 13px;                                                   -fx-border-color: transparent;                                                   -fx-focus-color: transparent;                                                   -fx-faint-focus-color: transparent;" />
+                            </children>
+                        </AnchorPane>
+
+                        <Label layoutX="38.0" layoutY="282.0" style="-fx-text-fill: rgba(30,50,110,0.55);                                       -fx-font-size: 10px;                                       -fx-font-weight: bold;" text="Password" />
+
+                        <AnchorPane layoutX="32.0" layoutY="298.0" prefHeight="46.0" prefWidth="330.0" style="-fx-background-color: #F4F7FF;                                            -fx-background-radius: 10;                                            -fx-border-color: #D1DCFF;                                            -fx-border-width: 1.5;                                            -fx-border-radius: 10;">
+                            <children>
+                                <Label layoutX="12.0" layoutY="13.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 12px;" text="⬡" />
+                                <PasswordField fx:id="password_tf" layoutX="36.0" layoutY="5.0" prefHeight="36.0" prefWidth="282.0" promptText="Enter your password" style="-fx-background-color: transparent;                                                       -fx-text-fill: #1A2340;                                                       -fx-prompt-text-fill: rgba(100,116,180,0.55);                                                       -fx-font-size: 13px;                                                       -fx-border-color: transparent;                                                       -fx-focus-color: transparent;                                                       -fx-faint-focus-color: transparent;" />
+                            </children>
+                        </AnchorPane>
+
+                        <Label layoutX="228.0" layoutY="354.0" style="-fx-text-fill: #3B6FE8;                                       -fx-font-size: 11px;                                       -fx-cursor: hand;" text="Forgot password?" />
+
+                        <Button fx:id="btn_login" layoutX="32.0" layoutY="376.0" mnemonicParsing="false" onAction="#onLoginBtn" prefHeight="46.0" prefWidth="330.0" style="-fx-background-color: linear-gradient(to right, #16a34a, #22c55e);                                        -fx-background-radius: 10;                                        -fx-font-size: 14px;                                        -fx-font-weight: bold;                                        -fx-cursor: hand;                                        -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.40), 20, 0, 0, 6);" text="Log In  " textFill="WHITE" />
+
+                        <AnchorPane layoutX="32.0" layoutY="434.0" prefHeight="1.0" prefWidth="330.0" style="-fx-background-color: rgba(180,195,240,0.50);" />
+
+                        <Label alignment="CENTER" layoutX="32.0" layoutY="442.0" prefWidth="330.0" style="-fx-text-fill: rgba(100,116,160,0.45);                                       -fx-font-size: 10px;" text="Developed by Chalana Dilshan" />
+
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>

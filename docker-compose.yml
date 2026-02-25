@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  localstack:
+    container_name: "oes_localstack_pro"
+    image: localstack/localstack-pro
+    ports:
+      - "4566:4566"
+    environment:
+      - PERSISTENCE=1
+      - LS_LOG=error
+      - AUTH_TOKEN=ls-doZEcUrI-roSA-xIgI-yoVa-91136821a135
+    volumes:
+      - "./volume:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  db:
+    image: mysql:8.0
+    container_name: "oes_database"
+    restart: always
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: users_db
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

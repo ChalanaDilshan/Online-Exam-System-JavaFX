@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to bottom right, #EAF0FF, #F5F7FF, #EDF2FF);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.ManageExams_Controller">
+
+    <children>
+
+        <AnchorPane layoutX="-80.0" layoutY="-80.0" prefHeight="340.0" prefWidth="340.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 50%, rgba(99,130,255,0.14) 0%, transparent 100%);" />
+        <AnchorPane layoutX="1050.0" layoutY="520.0" prefHeight="260.0" prefWidth="260.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 50%, rgba(139,110,255,0.11) 0%, transparent 100%);" />
+
+
+        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="780.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to bottom, #0f172a, #1e293b); -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.28), 24, 0, 6, 0);">
+            <children>
+
+                <Label alignment="CENTER" layoutX="0.0" layoutY="32.0" prefWidth="280.0" style="-fx-text-fill: #FFFFFF;                            -fx-font-size: 26px;                            -fx-font-weight: bold;" text="OES Admin" />
+
+                <Label alignment="CENTER" layoutX="0.0" layoutY="64.0" prefWidth="280.0" style="-fx-text-fill: rgba(255,255,255,0.45);                            -fx-font-size: 10px;                            -fx-font-style: italic;" text="Online Exam System" />
+
+                <AnchorPane layoutX="40.0" layoutY="100.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.20);" />
+
+                <Label layoutX="24.0" layoutY="116.0" style="-fx-text-fill: rgba(255,255,255,0.40);                            -fx-font-size: 9px;                            -fx-font-weight: bold;" text="NAVIGATION" />
+
+                <Button fx:id="Myclasses_btn" layoutX="20.0" layoutY="138.0" mnemonicParsing="false" onAction="#OnMyClasses" prefHeight="44.0" prefWidth="240.0" style="-fx-background-color: rgba(255,255,255,0.13);                            -fx-background-radius: 10;                            -fx-font-size: 13px;                            -fx-font-weight: bold;                            -fx-cursor: hand;                            -fx-alignment: CENTER_LEFT;" text="  📋  My Classes" textFill="WHITE" />
+
+                <Button layoutX="20.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="240.0" style="-fx-background-color: rgba(255,255,255,0.28);                            -fx-background-radius: 10;                            -fx-font-size: 13px;                            -fx-font-weight: bold;                            -fx-cursor: hand;                            -fx-alignment: CENTER_LEFT;                            -fx-border-color: rgba(255,255,255,0.55);                            -fx-border-width: 1;                            -fx-border-radius: 10;" text="  📝  Manage Exams" textFill="WHITE" />
+
+                <Button fx:id="Addquestions_btn" layoutX="20.0" layoutY="246.0" mnemonicParsing="false" onAction="#OnaddQuestions" prefHeight="44.0" prefWidth="240.0" style="-fx-background-color: rgba(255,255,255,0.13);                            -fx-background-radius: 10;                            -fx-font-size: 13px;                            -fx-font-weight: bold;                            -fx-cursor: hand;                            -fx-alignment: CENTER_LEFT;" text="  ➕  Add Questions" textFill="WHITE" />
+
+                <Button fx:id="Studentresults_btn" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" onAction="#OnResults" prefHeight="44.0" prefWidth="240.0" style="-fx-background-color: rgba(255,255,255,0.13);                            -fx-background-radius: 10;                            -fx-font-size: 13px;                            -fx-font-weight: bold;                            -fx-cursor: hand;                            -fx-alignment: CENTER_LEFT;" text="  📊  Student Results" textFill="WHITE" />
+
+                <AnchorPane layoutX="40.0" layoutY="628.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.20);" />
+
+                <Button fx:id="Logout_btn" layoutX="60.0" layoutY="648.0" mnemonicParsing="false" onAction="#Onlogout" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: linear-gradient(to right, #ef4444, #dc2626); -fx-background-radius: 10; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;" text="⏻  Logout" textFill="WHITE" />
+
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="280.0" layoutY="0.0" prefHeight="72.0" prefWidth="1000.0" style="-fx-background-color: rgba(255,255,255,0.75);                    -fx-border-color: rgba(180,195,240,0.50) transparent transparent transparent;                    -fx-border-width: 0 0 1 0;">
+            <children>
+                <Label layoutX="28.0" layoutY="20.0" style="-fx-text-fill: #1A2340;                            -fx-font-size: 22px;                            -fx-font-weight: bold;" text="Manage Exams" />
+                <Label layoutX="28.0" layoutY="48.0" style="-fx-text-fill: rgba(80,95,145,0.60);                            -fx-font-size: 11px;" text="Create and manage all your exams in one place" />
+
+                <AnchorPane layoutX="840.0" layoutY="18.0" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 8;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1;                            -fx-border-radius: 8;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="0.0" layoutY="9.0" prefWidth="140.0" style="-fx-text-fill: #3B6FE8;                                    -fx-font-size: 11px;                                    -fx-font-weight: bold;" text="📅  Exam Dashboard" />
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="300.0" layoutY="90.0" prefHeight="590.0" prefWidth="390.0" style="-fx-background-color: #FFFFFF;                    -fx-background-radius: 16;                    -fx-border-color: rgba(180,195,240,0.45);                    -fx-border-width: 1;                    -fx-border-radius: 16;                    -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.10), 32, 0, 0, 10);">
+            <children>
+
+                <Label layoutX="28.0" layoutY="22.0" style="-fx-text-fill: #1A2340;                            -fx-font-size: 18px;                            -fx-font-weight: bold;" text="Create New Exam" />
+                <Label layoutX="28.0" layoutY="48.0" style="-fx-text-fill: rgba(80,95,145,0.55);                            -fx-font-size: 11px;" text="Fill in the details below" />
+
+                <AnchorPane layoutX="28.0" layoutY="74.0" prefHeight="1.0" prefWidth="334.0" style="-fx-background-color: rgba(180,195,240,0.45);" />
+
+                <Label layoutX="28.0" layoutY="90.0" style="-fx-text-fill: rgba(30,50,110,0.50);                            -fx-font-size: 9px;                            -fx-font-weight: bold;" text="EXAM NAME" />
+                <AnchorPane layoutX="28.0" layoutY="108.0" prefHeight="44.0" prefWidth="334.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 10;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1.5;                            -fx-border-radius: 10;">
+                    <children>
+                        <Label layoutX="12.0" layoutY="13.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 11px;" text="✦" />
+                        <TextField fx:id="ExamName_tf" layoutX="34.0" layoutY="4.0" prefHeight="36.0" prefWidth="290.0" promptText="Ex: Continous Assesment" style="-fx-background-color: transparent;                                    -fx-text-fill: #1A2340;                                    -fx-prompt-text-fill: rgba(100,116,180,0.50);                                    -fx-font-size: 12px;                                    -fx-border-color: transparent;                                    -fx-focus-color: transparent;                                    -fx-faint-focus-color: transparent;" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="28.0" layoutY="164.0" style="-fx-text-fill: rgba(30,50,110,0.50);                            -fx-font-size: 9px;                            -fx-font-weight: bold;" text="SUBJECT" />
+                <AnchorPane layoutX="28.0" layoutY="182.0" prefHeight="44.0" prefWidth="334.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 10;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1.5;                            -fx-border-radius: 10;">
+                    <children>
+                        <Label layoutX="12.0" layoutY="13.0" style="-fx-font-size: 11px;" text="📚" />
+                        <TextField fx:id="Subject_tf" layoutX="34.0" layoutY="4.0" prefHeight="36.0" prefWidth="290.0" promptText="Ex: CIS 12012" style="-fx-background-color: transparent;                                    -fx-text-fill: #1A2340;                                    -fx-prompt-text-fill: rgba(100,116,180,0.50);                                    -fx-font-size: 12px;                                    -fx-border-color: transparent;                                    -fx-focus-color: transparent;                                    -fx-faint-focus-color: transparent;" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="28.0" layoutY="238.0" style="-fx-text-fill: rgba(30,50,110,0.50);                            -fx-font-size: 9px;                            -fx-font-weight: bold;" text="EXAM DATE" />
+                <AnchorPane layoutX="28.0" layoutY="256.0" prefHeight="44.0" prefWidth="334.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 10;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1.5;                            -fx-border-radius: 10;">
+                    <children>
+                        <DatePicker fx:id="ExamDate_D" layoutX="8.0" layoutY="4.0" prefHeight="36.0" prefWidth="316.0" style="-fx-background-color: transparent;                                    -fx-font-size: 12px;                                    -fx-border-color: transparent;                                    -fx-focus-color: transparent;" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="28.0" layoutY="312.0" style="-fx-text-fill: rgba(30,50,110,0.50);                            -fx-font-size: 9px;                            -fx-font-weight: bold;" text="DURATION (MINUTES)" />
+                <AnchorPane layoutX="28.0" layoutY="330.0" prefHeight="44.0" prefWidth="334.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 10;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1.5;                            -fx-border-radius: 10;">
+                    <children>
+                        <Label layoutX="12.0" layoutY="13.0" style="-fx-font-size: 11px;" text="⏱" />
+                        <TextField fx:id="Duration_tf" layoutX="34.0" layoutY="4.0" prefHeight="36.0" prefWidth="290.0" promptText="Ex: 90" style="-fx-background-color: transparent;                                    -fx-text-fill: #1A2340;                                    -fx-prompt-text-fill: rgba(100,116,180,0.50);                                    -fx-font-size: 12px;                                    -fx-border-color: transparent;                                    -fx-focus-color: transparent;                                    -fx-faint-focus-color: transparent;" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="28.0" layoutY="386.0" style="-fx-text-fill: rgba(30,50,110,0.50);                            -fx-font-size: 9px;                            -fx-font-weight: bold;" text="NUMBER OF QUESTIONS" />
+                <AnchorPane layoutX="28.0" layoutY="404.0" prefHeight="44.0" prefWidth="334.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 10;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1.5;                            -fx-border-radius: 10;">
+                    <children>
+                        <Label layoutX="12.0" layoutY="13.0" style="-fx-font-size: 11px;" text="❓" />
+                        <TextField fx:id="NoofQuestions_tf" layoutX="34.0" layoutY="4.0" prefHeight="36.0" prefWidth="290.0" promptText="Ex: 40" style="-fx-background-color: transparent;                                    -fx-text-fill: #1A2340;                                    -fx-prompt-text-fill: rgba(100,116,180,0.50);                                    -fx-font-size: 12px;                                    -fx-border-color: transparent;                                    -fx-focus-color: transparent;                                    -fx-faint-focus-color: transparent;" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane layoutX="28.0" layoutY="462.0" prefHeight="1.0" prefWidth="334.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+                <Button fx:id="CreateExam_btn" layoutX="28.0" layoutY="478.0" mnemonicParsing="false" onAction="#OncreateExam" prefHeight="46.0" prefWidth="334.0" style="-fx-background-color: linear-gradient(to right, #2563eb, #3b82f6); -fx-background-radius: 10; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.35), 16, 0, 0, 5);" text="Create Exam" textFill="WHITE" />
+
+                <Label alignment="CENTER" layoutX="28.0" layoutY="538.0" prefWidth="334.0" style="-fx-text-fill: rgba(100,116,160,0.40);                            -fx-font-size: 10px;" text="All fields are required to create an exam" />
+
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="710.0" layoutY="90.0" prefHeight="590.0" prefWidth="548.0" style="-fx-background-color: #FFFFFF;                    -fx-background-radius: 16;                    -fx-border-color: rgba(180,195,240,0.45);                    -fx-border-width: 1;                    -fx-border-radius: 16;                    -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.10), 32, 0, 0, 10);">
+            <children>
+
+
+                <Label layoutX="28.0" layoutY="22.0" style="-fx-text-fill: #1A2340;                            -fx-font-size: 18px;                            -fx-font-weight: bold;" text="Exam List" />
+                <Label layoutX="28.0" layoutY="48.0" style="-fx-text-fill: rgba(80,95,145,0.55);                            -fx-font-size: 11px;" text="All created exams appear here" />
+
+
+                <AnchorPane layoutX="28.0" layoutY="78.0" prefHeight="38.0" prefWidth="492.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 9;                            -fx-border-color: #D1DCFF;                            -fx-border-width: 1;                            -fx-border-radius: 9;">
+                    <children>
+                        <Label layoutX="12.0" layoutY="11.0" style="-fx-font-size: 12px;" text="🔍" />
+                        <TextField layoutX="34.0" layoutY="2.0" prefHeight="34.0" prefWidth="448.0" promptText="Search exams..." style="-fx-background-color: transparent;                                    -fx-text-fill: #1A2340;                                    -fx-prompt-text-fill: rgba(100,116,180,0.50);                                    -fx-font-size: 12px;                                    -fx-border-color: transparent;                                    -fx-focus-color: transparent;                                    -fx-faint-focus-color: transparent;" />
+                    </children>
+                </AnchorPane>
+
+
+                <AnchorPane layoutX="28.0" layoutY="126.0" prefHeight="1.0" prefWidth="492.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+
+                <TableView fx:id="ExamList_tbl" layoutX="28.0" layoutY="136.0" prefHeight="414.0" prefWidth="492.0" style="-fx-background-color: transparent;                            -fx-border-color: transparent;                            -fx-table-cell-border-color: rgba(180,195,240,0.30);">
+                    <columns>
+                        <TableColumn fx:id="col_examName" prefWidth="140.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Exam Name" />
+                        <TableColumn fx:id="col_subject" prefWidth="110.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Subject" />
+                        <TableColumn fx:id="col_date" prefWidth="100.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Date" />
+                        <TableColumn fx:id="col_duration" prefWidth="80.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Duration" />
+                        <TableColumn fx:id="col_questions" prefWidth="62.0" style="-fx-font-weight: bold; -fx-font-size: 12px;" text="Q's" />
+                    </columns>
+                </TableView>
+
+
+                <AnchorPane layoutX="0.0" layoutY="554.0" prefHeight="36.0" prefWidth="548.0" style="-fx-background-color: #F4F7FF;                            -fx-background-radius: 0 0 16 16;" />
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to bottom right, #EAF0FF, #F5F7FF, #EDF2FF);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.StudentAnswering_controller">
+
+    <children>
+        <AnchorPane layoutX="1060.0" layoutY="500.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 50%, rgba(139,110,255,0.09) 0%, transparent 100%);" />
+
+
+        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="68.0" prefWidth="1280.0" style="-fx-background-color: rgba(255,255,255,0.88);                    -fx-border-color: rgba(180,195,240,0.50) transparent transparent transparent;                    -fx-border-width: 0 0 1 0;                    -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.08), 12, 0, 0, 4);">
+            <children>
+
+                <AnchorPane layoutX="20.0" layoutY="14.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: linear-gradient(to right, #2563eb, #3b82f6); -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.35), 8, 0, 0, 2);">
+                    <children>
+                        <Label alignment="CENTER" layoutX="0.0" layoutY="8.0" prefWidth="40.0" style="-fx-font-size: 16px;" text="📝" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="70.0" layoutY="21.0" style="-fx-text-fill: #1A2340; -fx-font-size: 16px; -fx-font-weight: bold;" text="NST 12012 - Computer Networks " />
+                <Label layoutX="70.0" layoutY="38.0" style="-fx-text-fill: rgba(80,95,145,0.60); -fx-font-size: 10px;" />
+
+                <AnchorPane layoutX="490.0" layoutY="10.0" prefHeight="48.0" prefWidth="300.0" style="-fx-background-color: #F4F7FF; -fx-background-radius: 12;                            -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 12;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="0.0" layoutY="6.0" prefWidth="300.0" style="-fx-text-fill: rgba(80,95,145,0.60); -fx-font-size: 10px; -fx-font-weight: bold;" text="Time Remaining" />
+                        <Label fx:id="Timerlbl" alignment="CENTER" layoutX="0.0" layoutY="22.0" prefWidth="300.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 20px; -fx-font-weight: bold;" text="01 : 24 : 38" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="851.0" layoutY="15.0" style="-fx-text-fill: rgba(80,95,145,0.55); -fx-font-size: 12px; -fx-font-weight: bold;" text="Progress" />
+                <Label layoutX="851.0" layoutY="30.0" style="-fx-text-fill: #1A2340; -fx-font-size: 14px; -fx-font-weight: bold;" text="1 / 40 answered" />
+
+                <Button layoutX="1170.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to right, #10B981, #34D399); -fx-background-radius: 10; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(16,185,129,0.35), 10, 0, 0, 3);" text="Submit" textFill="WHITE" />
+
+            </children>
+        </AnchorPane>
+
+
+        <AnchorPane layoutX="0.0" layoutY="68.0" prefHeight="652.0" prefWidth="220.0" style="-fx-background-color: rgba(255,255,255,0.82);                    -fx-border-color: rgba(180,195,240,0.40) transparent transparent transparent;                    -fx-border-width: 0 1 0 0;">
+            <children>
+
+                <Label layoutX="16.0" layoutY="18.0" style="-fx-text-fill: rgba(30,50,110,0.45); -fx-font-size: 10px; -fx-font-weight: bold;" text="QUESTIONS" />
+
+                <AnchorPane layoutX="16.0" layoutY="44.0" prefHeight="1.0" prefWidth="188.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+                <Label layoutX="17.0" layoutY="63.0" prefHeight="28.0" prefWidth="97.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 12px; -fx-font-weight: bold;" text="12 answered">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+                <Label layoutX="17.0" layoutY="91.0" style="-fx-text-fill: rgba(80,95,145,0.55); -fx-font-size: 12px;" text="28 remaining">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+
+            </children>
+        </AnchorPane>
+
+
+        <AnchorPane layoutX="230.0" layoutY="80.0" prefHeight="640.0" prefWidth="830.0" style="-fx-background-color: transparent;">
+            <children>
+
+                <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="810.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 18;                            -fx-border-color: rgba(180,195,240,0.45); -fx-border-width: 1; -fx-border-radius: 18;                            -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.12), 32, 0, 0, 10);">
+                    <children>
+
+                        <AnchorPane layoutX="24.0" layoutY="22.0" prefHeight="28.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to right, #2563eb, #3b82f6); -fx-background-radius: 8; -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.30), 8, 0, 0, 2);">
+                            <children>
+                                <Label alignment="CENTER" layoutX="0.0" layoutY="6.0" prefWidth="110.0" style="-fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold;" text="Question 1 of 40" />
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane layoutX="150.0" layoutY="22.0" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 8;                                    -fx-border-color: #D1DCFF; -fx-border-width: 1; -fx-border-radius: 8;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="0.0" layoutY="6.0" prefWidth="70.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 11px; -fx-font-weight: bold;" text="5 Marks" />
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane layoutX="24.0" layoutY="62.0" prefHeight="1.0" prefWidth="762.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+                        <Label fx:id="Question_lbl" layoutX="24.0" layoutY="70.0" prefHeight="92.0" prefWidth="762.0" style="-fx-text-fill: #1A2340; -fx-font-size: 17px; -fx-font-weight: bold;                                    -fx-line-spacing: 4;" text="A train travels from Station A to Station B, a distance of 360 km, at a constant speed. If the train increases its speed by 20 km/h, it would arrive 1 hour earlier. What is the original speed of the train?" wrapText="true" />
+
+                        <AnchorPane layoutX="24.0" layoutY="160.0" prefHeight="1.0" prefWidth="762.0" style="-fx-background-color: rgba(180,195,240,0.35);" />
+
+                        <Label layoutX="24.0" layoutY="172.0" style="-fx-text-fill: rgba(30,50,110,0.40); -fx-font-size: 10px; -fx-font-weight: bold;" text="SELECT ONE ANSWER" />
+
+                        <AnchorPane layoutX="24.0" layoutY="192.0" prefHeight="58.0" prefWidth="762.0" style="-fx-background-color: linear-gradient(to right, rgba(59,111,232,0.08), rgba(98,70,234,0.05)); -fx-background-radius: 13; -fx-border-color: #D1DCFF; -fx-border-width: 2; -fx-border-radius: 13; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.18), 14, 0, 0, 4);">
+                            <children>
+                                <AnchorPane layoutX="16.0" layoutY="15.0" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 50;">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="0.0" layoutY="5.0" prefWidth="28.0" style="-fx-text-fill: rgba(80,95,145,0.70); -fx-font-size: 12px; -fx-font-weight: bold;" text="A" />
+                                    </children>
+                                </AnchorPane>
+                                <Label fx:id="OptionA_lbl" layoutX="56.0" layoutY="19.0" style="-fx-text-fill: #1A2340; -fx-font-size: 15px;" text="60 km/h" />
+                            </children>
+                        </AnchorPane>
+
+
+                        <AnchorPane layoutX="24.0" layoutY="262.0" prefHeight="58.0" prefWidth="762.0" style="-fx-background-color: #F4F7FF; -fx-background-radius: 13;                                    -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 13;                                    -fx-cursor: hand;">
+                            <children>
+                                <AnchorPane layoutX="16.0" layoutY="15.0" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 50;                                            -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 50;">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="0.0" layoutY="5.0" prefWidth="28.0" style="-fx-text-fill: rgba(80,95,145,0.70); -fx-font-size: 12px; -fx-font-weight: bold;" text="B" />
+                                    </children>
+                                </AnchorPane>
+                                <Label fx:id="OptionB_lbl" layoutX="56.0" layoutY="19.0" style="-fx-text-fill: #1A2340; -fx-font-size: 15px;" text="72 km/h" />
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane layoutX="24.0" layoutY="332.0" prefHeight="58.0" prefWidth="762.0" style="-fx-background-color: #F4F7FF; -fx-background-radius: 13;                                    -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 13;                                    -fx-cursor: hand;">
+                            <children>
+                                <AnchorPane layoutX="16.0" layoutY="15.0" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 50;                                            -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 50;">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="0.0" layoutY="5.0" prefWidth="28.0" style="-fx-text-fill: rgba(80,95,145,0.70); -fx-font-size: 12px; -fx-font-weight: bold;" text="C" />
+                                    </children>
+                                </AnchorPane>
+                                <Label fx:id="OptionC_lbl" layoutX="56.0" layoutY="19.0" style="-fx-text-fill: #1A2340; -fx-font-size: 15px;" text="80 km/h" />
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane layoutX="24.0" layoutY="402.0" prefHeight="58.0" prefWidth="762.0" style="-fx-background-color: #F4F7FF; -fx-background-radius: 13;                                    -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 13;                                    -fx-cursor: hand;">
+                            <children>
+                                <AnchorPane layoutX="16.0" layoutY="15.0" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 50;                                            -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 50;">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="0.0" layoutY="5.0" prefWidth="28.0" style="-fx-text-fill: rgba(80,95,145,0.70); -fx-font-size: 12px; -fx-font-weight: bold;" text="D" />
+                                    </children>
+                                </AnchorPane>
+                                <Label fx:id="OptionD_lbl" layoutX="56.0" layoutY="19.0" style="-fx-text-fill: #1A2340; -fx-font-size: 15px;" text="90 km/h" />
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane layoutX="24.0" layoutY="476.0" prefHeight="1.0" prefWidth="762.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+                        <Button fx:id="Previous_btn" layoutX="24.0" layoutY="492.0" mnemonicParsing="false" onAction="#OnPreviousBtn" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #F4F7FF; -fx-background-radius: 11; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand; -fx-border-color: #D1DCFF; -fx-border-width: 1.5; -fx-border-radius: 11;" text="Previous" textFill="#5A6A9A" />
+
+                        <Button layoutX="324.0" layoutY="492.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="162.0" style="-fx-background-color: #FFFBEB; -fx-background-radius: 11; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand; -fx-border-color: #FDE68A; -fx-border-width: 1.5; -fx-border-radius: 11;" text="Skip Question " textFill="#F59E0B" />
+
+                        <Button fx:id="Save_btn" layoutX="608.0" layoutY="492.0" mnemonicParsing="false" onAction="#OnsaveNext" prefHeight="44.0" prefWidth="178.0" style="-fx-background-color: linear-gradient(to right, #2563eb, #3b82f6); -fx-background-radius: 11; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.35), 14, 0, 0, 4);" text="Save &amp; Next " textFill="WHITE" />
+
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="1060.0" layoutY="68.0" prefHeight="652.0" prefWidth="220.0" style="-fx-background-color: rgba(255,255,255,0.82);                    -fx-border-color: rgba(180,195,240,0.40) transparent transparent transparent;                    -fx-border-width: 0 0 0 1;">
+            <children>
+
+                <Label layoutX="16.0" layoutY="18.0" style="-fx-text-fill: rgba(30,50,110,0.45); -fx-font-size: 10px; -fx-font-weight: bold;" text="EXAM INFO" />
+
+                <AnchorPane layoutX="16.0" layoutY="36.0" prefHeight="130.0" prefWidth="188.0" style="-fx-background-color: #F4F7FF; -fx-background-radius: 12;                            -fx-border-color: #D1DCFF; -fx-border-width: 1; -fx-border-radius: 12;">
+                    <children>
+
+                        <Label layoutX="12.0" layoutY="12.0" style="-fx-text-fill: rgba(80,95,145,0.55); -fx-font-size: 10px; -fx-font-weight: bold;" text="Subject" />
+                        <Label fx:id="subjectName_lbl" layoutX="12.0" layoutY="26.0" style="-fx-text-fill: #1A2340; -fx-font-size: 12px; -fx-font-weight: bold;" text="Subject Name" />
+
+                        <AnchorPane layoutX="12.0" layoutY="48.0" prefHeight="1.0" prefWidth="164.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+                        <Label layoutX="12.0" layoutY="56.0" style="-fx-text-fill: rgba(80,95,145,0.55); -fx-font-size: 10px; -fx-font-weight: bold;" text="Total Questions" />
+                        <Label fx:id="noofQuestions_lbl" layoutX="12.0" layoutY="70.0" style="-fx-text-fill: #1A2340; -fx-font-size: 12px; -fx-font-weight: bold;" text="50" />
+
+                        <AnchorPane layoutX="12.0" layoutY="90.0" prefHeight="1.0" prefWidth="164.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+                        <Label layoutX="12.0" layoutY="98.0" style="-fx-text-fill: rgba(80,95,145,0.55); -fx-font-size: 10px; -fx-font-weight: bold;" text="Total Marks" />
+                        <Label layoutX="12.0" layoutY="112.0" style="-fx-text-fill: #1A2340; -fx-font-size: 11px; -fx-font-weight: bold;" text="100 Marks  (5 each)" />
+                    </children>
+                </AnchorPane>
+
+                <Label layoutX="16.0" layoutY="182.0" style="-fx-text-fill: rgba(30,50,110,0.45); -fx-font-size: 10px; -fx-font-weight: bold;" text="TIPS" />
+
+                <AnchorPane layoutX="16.0" layoutY="200.0" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 8; -fx-border-color: #D1DCFF; -fx-border-width: 1; -fx-border-radius: 8;">
+                    <children>
+                        <Label layoutX="8.0" layoutY="9.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 12;" text="💡  Read carefully first" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="16.0" layoutY="245.0" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 8; -fx-border-color: #D1DCFF; -fx-border-width: 1; -fx-border-radius: 8;">
+                    <children>
+                        <Label layoutX="8.0" layoutY="9.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 12px;" text="⏱  Watch the timer" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="16.0" layoutY="291.0" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: #EEF2FF; -fx-background-radius: 8; -fx-border-color: #D1DCFF; -fx-border-width: 1; -fx-border-radius: 8;">
+                    <children>
+                        <Label layoutX="8.0" layoutY="9.0" style="-fx-text-fill: #3B6FE8; -fx-font-size: 12px;" text="✅  Review before submit" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane layoutX="16.0" layoutY="353.0" prefHeight="1.0" prefWidth="188.0" style="-fx-background-color: rgba(180,195,240,0.40);" />
+
+                <AnchorPane layoutX="16.0" layoutY="368.0" prefHeight="100.0" prefWidth="188.0" style="-fx-background-color: linear-gradient(to right, #2563eb, #3b82f6); -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(59,111,232,0.30), 14, 0, 0, 4);">
+                    <children>
+                        <Label layoutX="12.0" layoutY="21.0" style="-fx-text-fill: rgba(255,255,255,0.85); -fx-font-size: 12px; -fx-font-weight: bold;" text="Ready to submit?" />
+                        <Button layoutX="12.0" layoutY="50.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="164.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8; -fx-font-size: 12px; -fx-font-weight: bold; -fx-cursor: hand;" text="Submit Exam" textFill="#3B6FE8" />
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>
