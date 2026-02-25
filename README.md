@@ -107,10 +107,6 @@ The system uses a relational MySQL database with the following key tables:
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
 
 ## 📸 Screenshots
 
@@ -124,3 +120,7 @@ This project is licensed under the **MIT License**.
 
 
 ---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
